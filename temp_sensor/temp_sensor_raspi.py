@@ -7,7 +7,7 @@ import json
 client = boto3.client('firehose')
 
 if __name__ == '__main__':
-    serial = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
+    seri = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
     time.sleep(3)
     while 1:
         serial.write('get')
